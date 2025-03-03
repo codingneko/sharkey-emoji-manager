@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Catboy.baby emoji manager</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <a href="https://catboy.baby">
+                <i class="fa-solid fa-arrow-left"></i>
+                Go back to Sharkey
+            </a>
+            <h1>Catboy.baby emoji manager (Alpha)</h1>
+            <p>
+                Welcome to catboy.baby's emoji manager. If you'd like to 
+                add an emoji, please upload it here. 
+            </p>
+            <p>
+                If for whatever reason this doesn't work, please contact <a href="https://catboy.baby/@cody">@cody@catboy.baby</a> 
+            </p>
+            <p>
+                You need the Emoji curator role to be able to use this function. 
+            </p>
+            <p>
+                You are currently <span id="curator-status">not an emoji curator</span>
+            </p>
+            <div class="flex">
+                <div class="single-emoji">
+                    <h3>Add single emoji</h3>
+                    <div>
+                        <form id="emojiForm" method="POST">
+                            <div class="flex">
+                                <div class="form-input">
+                                    <label for="name" title="the name of your emoji (without the &quot;:&quot; )">Emoji name</label>
+                                    <input type="text" id="name" required>
+                                </div>
+                                <div class="form-input">
+                                    <label for="file" title="The file you want to use as the emoji">File</label>
+                                    <input type="file" id="file" required>
+                                </div>
+                            </div>
+                            <div id="result">
+            
+                            </div>
+                            <div>
+                                <button>
+                                    Add emoji <i class="fa-solid fa-thumbs-up" style="font-size: large;"></i></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="index.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/iconify/3.1.1/iconify.min.js" integrity="sha512-oQ1yQwSEIc9CTcK7pffEyS8fxom2iUWQrALk3j3+wfdSDjQ77EZbzGMGe2ZYmfoC8M9vR47apbS1ZYbW05y/pg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
+    </body>
+</html>

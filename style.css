@@ -1,0 +1,106 @@
+body {
+    background-color: rgb(25, 25, 25);
+    color: white;
+    font-family: Lexend,Hiragino Maru Gothic Pro,BIZ UDGothic,Roboto,HelveticaNeue,Arial,sans-serif;
+    padding: 0px;
+    margin: 0px;
+    min-height: 100vh;
+}
+
+a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+button {
+    margin-top: 1rem;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 2rem;
+    background: linear-gradient(90deg, rgb(52, 204, 224), rgb(52, 147, 224));
+    color: #fff;
+    font-weight: bolder;
+}
+
+button:hover {
+    background: #2EF;
+    cursor: pointer;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+input[type=text] {
+    border: solid 1px transparent;
+    background-color: #666;
+    padding: 5px;
+    color: #fff;
+    border-radius: 6px;
+    transition: all 0.2s;
+}
+
+input[type=text]:focus, input[type=text]:active {
+    border: solid 1px #2EF;
+    outline: none;
+}
+
+input[type=file] {
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+    padding: 5px;
+}
+
+.flex {
+    display: flex;
+}
+
+.form-input {
+    margin-left: 1rem;
+}
+
+.form-input:nth-child(1) {
+    margin-left: 0;
+}
+
+#curator-status {
+    color: #fb8d80;
+}
+
+#emojiForm {
+    display: block;
+}
+
+#name:hover {
+    border: solid 1px #999;
+}
+
+#result {
+    display: none;
+    border-radius: 0.4rem;
+    padding: 1rem 2rem;
+    margin: 1rem 0rem 0.3rem 0rem;
+}
+
+#result.error {
+    display: block;
+    background-color: #270400;
+    border: solid 1px #c41400;
+}
+
+#result.success {
+    display: block;
+    background-color: #053800;
+    border: solid 1px #0fb800;
+}
+
+.container {
+    margin: auto;
+    display: block;
+    max-width: 70rem;
+    padding: 6rem;
+}
+
